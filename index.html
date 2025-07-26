@@ -62,6 +62,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 0 20px;
+            position: relative;
         }
 
         .container {
@@ -349,13 +350,13 @@
         }
 
         .theme-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
             background: var(--accent-color);
             color: white;
             border: none;
-            padding: 10px 15px;
+            padding: 8px 12px;
             border-radius: 50px;
             cursor: pointer;
             font-weight: bold;
@@ -418,10 +419,11 @@
                 margin-bottom: 15px;
             }
             .theme-toggle {
-                top: 10px;
-                right: 10px;
-                padding: 8px 12px;
-                font-size: 14px;
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 10px 0;
+                align-self: flex-end;
             }
             .timeline::after {
                 left: 31px;
@@ -471,10 +473,10 @@
                 <div class="clock-date" id="clockDate">January 1, 2025</div>
             </div>
         </div>
+        <button class="theme-toggle" id="themeToggle">🌙 Night Mode</button>
     </div>
 </div>
 
-<button class="theme-toggle" id="themeToggle">🌙 Night Mode</button>
 <a href="#" class="back-to-top" id="backToTop">↑</a>
 
 <main class="container">
